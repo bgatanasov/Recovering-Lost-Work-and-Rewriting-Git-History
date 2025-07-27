@@ -66,3 +66,57 @@ remote:
 To github.com:bgatanasov/Recovering-Lost-Work-and-Rewriting-Git-History.git
  * [new branch]      dev-branch -> dev-branch
 branch 'dev-branch' set up to track 'origin/dev-branch'.
+
+
+
+
+valeri@win11-teslab MINGW64 /c/Exam/Recovering Lost Work and Rewriting Git History (dev-branch)
+$ git status
+On branch dev-branch
+Your branch is up to date with 'origin/dev-branch'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+valeri@win11-teslab MINGW64 /c/Exam/Recovering Lost Work and Rewriting Git History (dev-branch)
+$ git status
+On branch dev-branch
+Your branch is up to date with 'origin/dev-branch'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+valeri@win11-teslab MINGW64 /c/Exam/Recovering Lost Work and Rewriting Git History (dev-branch)
+$ git add .
+
+valeri@win11-teslab MINGW64 /c/Exam/Recovering Lost Work and Rewriting Git History (dev-branch)
+$ git switch main
+A       README.md
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+valeri@win11-teslab MINGW64 /c/Exam/Recovering Lost Work and Rewriting Git History (main)
+$ git add .
+
+valeri@win11-teslab MINGW64 /c/Exam/Recovering Lost Work and Rewriting Git History (main)
+$ git commit -m "added readme file."
+[main cb5998a] added readme file.
+ 1 file changed, 68 insertions(+)
+ create mode 100644 README.md
+
+valeri@win11-teslab MINGW64 /c/Exam/Recovering Lost Work and Rewriting Git History (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.19 KiB | 607.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:bgatanasov/Recovering-Lost-Work-and-Rewriting-Git-History.git
+   87a1dfa..cb5998a  main -> main
